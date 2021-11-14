@@ -1,4 +1,4 @@
-# final-foggyMeerkat
+# final
 
 Link to google doc of writeup:
 
