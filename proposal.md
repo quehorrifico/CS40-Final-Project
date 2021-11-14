@@ -1,0 +1,25 @@
+Proposal:
+
+For our final project, we plan to create an infinite terrain generator. It will be targeted at realism, to a reasonable degree, and will generate varied terrain, such as mountains, plains, and lakes. We intend to implement it through raymarching and Perlin noise functions, using noise to generate terrain maps and then rendering them realistically with raymarching.
+The concepts that we plan to use from what we learned over the course of this semester are the ray marching algorithm, the concepts of SDF functions that go along with it, Perlin noise function, and combining them all to create a realistic scene that models a natural landscape. The new ideas that we plan to implement are derived from combinations of the aforementioned concepts, which will create a more interesting scene than when used independently.
+
+The short term, primary and reach goals that we created to help us keep track of our progress are as follows:
+
+Our short-term goals are to implement the ray-marcher with support for soft shadows. Perlin noise functions with a 1-dimensional preview to help us determine if it is working. A basic terrain mesh generator, that we will improve upon by enhancing the detail of the terrain. Once that has been implemented, we will then move onto adding coloring to the terrain and beginning to differentiate the scenery by its biome (rivers, grass, mountains, etc.). We then intend to add texture support to further increase realism of the generated landmass, and finally add camera movement to allow us to move freely in the scene and observe the world generation.
+
+Our primary goal is to infinitely generate reasonably-realistic terrain, with a variety of terrain types and heights such as valleys, mountains, bodies of water, hills, and flat plains, each of which is textured and lit convincingly with ray-marched lighting. We will also have a functioning movable camera to explore the generated terrain, and a convincing blue daytime sky with a sun. The user should be able to move indefinitely in any direction and continually encounter newly-generating terrain, without reaching a limit to the world of some sort, and without the terrain gradually becoming less realistic and convincing as the camera’s distance to the starting point increases.
+
+For our reach goals, if we have the time we would like to implement a shifting day-and-night cycle, convincingly changing the lighting as time goes on to allow sunrises, sunsets, moon-lit nights, and broad daylight. This would effectively demonstrate the shadow functionality of our raymarched lighting and add to the realism of the generated scene.
+We are also interested in adding a skybox to make this day-night cycle more realistic, allowing things like stars in the night sky or static clouds to be displayed. If time permits, we may also try to include dynamic 3d cloud generation functionality instead of static skybox clouds, perhaps generating them procedurally with noise like the terrain.
+Another reach goal is to implement animated 3d water rendering for the lakes and rivers that generate, rather than leaving water as simply flat blue terrain with increased specularity. This will likely increase the realism of the generated scenery significantly, though we are not sure if it corresponds very much with any content yet covered in the class. Similarly, generating trees on the terrain at appropriate locations may be another interesting reach goal to pursue.
+Finally, we would like to add a GUI selector that allows the user to render a few alternate variations of the terrain generator - such as a dark cave generator that uses a flashlight at the camera eye point rather than a sun for lighting, or some sort of surreal, inverted terrain generator that creates bizarre landscapes, et cetera.
+
+
+
+Intermediate Report:
+
+Progress so far has been moving along, albeit slowly. We are having trouble combining a camera/raymarcher with somekind of background that contains noise.
+
+We have deviated from our short-term goals by trying to implement a camera for us to be able to see the noise background that we would generate, but are now thinking that should focus on creating an image (we will most likely comment out the code we have so far that doesn't pertain to that) that shows the noise that we've been able to generate. Once that has been done, we want to create a scene with a camera and an xz plane at y-level 0. Once that plane has been made (which we've been frustratingly having trouble creating too) we want to make it so that the plane is our 2D dimensional noise map. Such that we can simply see the noise mapped onto the plane. We think that doing this will give us nice progress that we can build onto.
+
+That should take us a few hours worth of work we think. Once we do that, we'd like to implement the third dimensional noise map. That part has given us some confusion, although we do have code that that we wrote. We started there for some reason, but then remembered that we should be following our short-term goals that we wrote and left it there for us to use later.

@@ -1,0 +1,10 @@
+canvas {
+    display: block;
+    width: 95vw;
+    height: 95vh;
+    border: 0px;
+}
+
+canvas:focus {
+  outline: none;
+}

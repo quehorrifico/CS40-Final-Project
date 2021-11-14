@@ -1,0 +1,7 @@
+This was an ambitious project and it turned out very well. You should be proud of what you accomplished. This is the first CS40 project I have seen that combines 2D noise with ray marching and while the effects may not have matched the ideal concepts you had in mind, it is clear from the code and the demo that the core concepts are in place. The final report is a thorough writeup that provides a solid motivation, an overview of the key technical components and an honest assessment of the project's shortcomings. But the shortcomings are primarily a result of being new to graphics, having limited time to work on this particular project and *waves hands* 2020 stuff. I have no doubt that given a bit of extra time and some follow up meetings we could hash out a few of the pending issues, but as is, this project is very solid in its current form. I also appreciate groups willing to take risks and trying something very new. In this case it worked out well, and as you note, there were a few unexpected delays, but this is bound to happen in any large new project during normal times.
+
+My only real criticism is that the code could be a little better documented in some places and some large unused feature that are commented out could  be simply removed from the final version (particularly the unused noise functions)
+
+Overall this was a very good project. Thanks for all the work you put into the code, the writeup, and the presentation.
+
+95/100
